@@ -1,0 +1,298 @@
+/*
+--typography
+
+---FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--ROOT element font size =62.5% *16px=10px
+   1 rem = 10px
+
+   
+--font weight 
+default:400
+medium 500
+semi-bold 600
+bold 700
+
+--line height 
+default:1
+small: 1.05
+medium 1.2
+paragragh default :1.6
+
+--letter spacing 
+-0.5px
+.75px
+
+
+---colors 
+-primary:#e67e22
+-tints:#fdf2e9
+-shades: #cf711f
+
+-accents: 
+-Greys:#555
+#333
+
+
+---shadows 
+
+---border radius
+Default: 9px  
+
+---White space
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+
+/******************************************************/
+/* GENERAL REUSABLE COMPONENTS */
+/******************************************************/
+.container{
+  /* 1140 px 114rem */
+  max-width: 120rem;
+  margin:0 auto;
+  padding:0 3.2rem;
+
+}
+.grid{
+  display: grid;
+  gap:9.6rem;
+
+}
+.grid--2-cols{
+
+  grid-template-columns:repeat(2,1fr);
+}
+.grid--3-cols{
+
+  grid-template-columns:repeat(3,1fr);
+}
+
+.heading-primary,.heading-secondry{
+
+  font-weight: 700;
+  color: #333;
+  /* color: #2e1907;  shade of orange*/
+  /* or open color grey */
+  
+  letter-spacing: -0.5px;
+
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.1;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondry{
+  font-size:4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+ .subheading{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600 ;
+
+  color:#cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+
+ }
+ 
+.btn:link,
+.btn:visited {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  /* put transition on the original state */
+  transition: background-color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #333;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  /* border: 2px solid #fff;
+   */
+  /* a trick to make a border inside the element */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+
+/******************************************************/
+/* HEADER */
+/******************************************************/
+
+.header{
+  background-color: #fdf2e9;
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+
+  /* bec we want to make it sticky when scrolling */
+  height: 9.6rem;
+  padding:0 4.8rem;
+
+}
+
+.logo{
+  /* break the spacing rule sometimes
+   */
+  height: 2.2rem;
+
+}
+
+/******************************************************/
+/* navigation */
+/******************************************************/
+
+
+.main-nav-list{
+  list-style: none  ;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited{
+  display:inline-block;
+  text-decoration:none;
+  padding:1.2rem 2.4rem;
+color:#333;
+  font-size:1.8rem;
+font-weight:500;
+transition:all 0.3s;  
+
+}
+.main-nav-link:hover,.main-nav-link:active{
+  color:#cf711f;
+}
+
+/* end selector  it is applied only when first and second class are in the element
+it increases specificity */
+.main-nav-link.cta-link:link,
+.main-nav-link.cta-link:visited{
+  background-color: #e67e22;
+color:#fff;
+border-radius:9px;
+padding:1.2rem 2.4rem;
+}
+.main-nav-link.cta-link:hover,
+.main-nav-link.cta-link:active{
+  background-color: #cf711f;
+}
+
+
+/******************************************************/
+/* HERO SECTION */
+/******************************************************/
+.section-hero {
+  background-color: #fdf2e9;
+  padding:4.8rem 0 9.6rem 0;
+
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 9.6rem;
+}
+
+
+.hero-discription {
+  font-size: 2rem;
+  /* font-weight: 400; */
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.6rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid #fdf2e9;
+  margin-right: -1.6rem;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+/******************************************************/
+/* HOW IT WORKS SECTION  */
+/******************************************************/
+.section-how{
+  padding:9.6rem 0;
+
+}
+
+.step-img{
+  width:50%;
+ }
