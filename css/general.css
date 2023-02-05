@@ -35,6 +35,7 @@ paragragh default :1.6
 -Greys:#555
 #333
 #888
+#6f6f6f lightest grey allowed on #fdf2e9
 
 ---shadows 
 
@@ -62,42 +63,37 @@ body {
   color: #555;
 }
 
-
 /******************************************************/
 /* GENERAL REUSABLE COMPONENTS */
 /******************************************************/
-.container{
+.container {
   /* 1140 px 114rem */
   max-width: 120rem;
-  margin:0 auto;
-  padding:0 3.2rem;
-
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
-.grid{
+.grid {
   display: grid;
-  gap:6.4rem;
-
+  gap: 6.4rem;
 }
-.grid--2-cols{
-
-  grid-template-columns:repeat(2,1fr);
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
-.grid--3-cols{
-
-  grid-template-columns:repeat(3,1fr);
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
-.grid--center-v{
+.grid--center-v {
   align-items: center;
 }
-.heading-primary,.heading-secondry,.heading-teriary{
-
+.heading-primary,
+.heading-secondry,
+.heading-teriary {
   font-weight: 700;
   color: #333;
   /* color: #2e1907;  shade of orange*/
   /* or open color grey */
-  
-  letter-spacing: -0.5px;
 
+  letter-spacing: -0.5px;
 }
 .heading-primary {
   font-size: 5.2rem;
@@ -105,28 +101,27 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.heading-secondry{
-  font-size:4.4rem;
+.heading-secondry {
+  font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
-.heading-teriary{
+.heading-teriary {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
- .subheading{
+.subheading {
   display: block;
   font-size: 1.6rem;
-  font-weight: 600 ;
+  font-weight: 600;
 
-  color:#cf711f;
+  color: #cf711f;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
+}
 
- }
- 
 .btn:link,
 .btn:visited {
   cursor: pointer;
@@ -167,18 +162,19 @@ body {
 }
 
 .link:link,
-.link:visited{
+.link:visited {
   display: inline-block;
   color: #e67e22;
   /*                    using same color as above */
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .link:hover,
-.link:active{color: #cf711f;
+.link:active {
+  color: #cf711f;
   border-bottom: 1px solid transparent;
 }
 
@@ -187,13 +183,13 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
-.margin-bottom-md{
+.margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
 
-.center-text{
+.center-text {
   text-align: center;
 }
-strong{
+strong {
   font-weight: 500;
 }
