@@ -265,23 +265,7 @@ height: 2.4rem; */
   color: #e67e22;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
+
 .all-recipies {
   font-size: 1.8rem;
   text-align: center;
@@ -343,5 +327,106 @@ transition: all .4s;
   transform: scale(1.1);
 }
 /******************************************************/
-/* testimonials SECTION  */
+/* pricing SECTION  */
 /******************************************************/
+.section-pricing{
+  padding: 9.6rem 0;
+  
+}
+.pricing-plan{
+  border-radius:11px;
+  width: 75%;
+  padding: 4.6rem;
+}
+.pricing-plan--starter{
+justify-self: end;
+border:2px solid #fdf2e9;
+
+}
+.pricing-plan--complete{
+  background-color:#fdf2e9;
+  /* border:2px solid rgba(255, 255, 255, 0);tranparent */
+  padding: 4.6rem;
+
+  position: relative;
+  overflow: hidden;
+
+}
+.pricing-plan--complete::after{
+  content: "best value";
+  color:#333;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+background-color: #ffd43b;
+  padding:.8rem 8rem;
+  position: absolute;
+  top:6%;
+  right: -18%;
+  transform: rotate(45deg);
+}
+
+.pricing-header{
+  margin-bottom: 4.8rem;
+  text-align: center;
+  color:#333;
+  
+}
+.plan-name{
+  color:#cf711f;
+  font-size: 2rem;
+  text-transform:uppercase;
+  font-weight: 600;
+  letter-spacing: .75px ;
+  margin-bottom: 3.2rem;
+}
+.plan-price{
+  font-size: 6.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.plan-price span{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: .8rem;
+}
+.plan-text{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.btn-signup{
+  margin-top: 4.8rem;
+  text-align: center;
+}
+.plan-details{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+
+
+}
+/******************************************************/
+/* features */
+/******************************************************/
+
+.feature-icon{
+  color:#e67e22;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #fdf2e9;
+  padding:1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+.feature-title{font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  color:#333;
+  
+
+}
+.feature-text{
+font-size: 1.6rem;
+line-height: 1.6;
+}
