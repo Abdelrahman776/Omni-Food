@@ -77,7 +77,8 @@ body {
 }
 .grid {
   display: grid;
-  gap: 6.4rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
   /* margin-bottom: 9.6rem; */
 }
 /* grid:last-child{
