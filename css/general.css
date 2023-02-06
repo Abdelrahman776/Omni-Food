@@ -33,7 +33,8 @@ paragragh default :1.6
 -shades: #cf711f
 
 -accents: 
--Greys:#555
+-Greys:#767676 lightest grey allowed on #fff
+#555
 #333
 #888
 #6f6f6f lightest grey allowed on #fdf2e9
@@ -64,7 +65,7 @@ body {
   font-weight: 400;
   color: #555;
 }
-
+/* a{display: inline-block;} */
 /******************************************************/
 /* GENERAL REUSABLE COMPONENTS */
 /******************************************************/
@@ -94,6 +95,9 @@ body {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid--center-v {
   align-items: center;
