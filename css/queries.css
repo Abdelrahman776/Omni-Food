@@ -155,18 +155,18 @@ transform: translateX(100%);
   transform: translateX(0);
 }
 .nav-open .icon-mobile-nav[name="close-outline"]{
-  /* display: block; */
-  opacity: 1;
+  display: block;
+  /* opacity: 1;
   pointer-events: auto;
-  visibility: visible;
+  visibility: visible; */
 }
 .nav-open .icon-mobile-nav[name="menu-outline"]{
-  /* display: none; */
-  opacity: 0;
+  display: none;
+  /* opacity: 0; */
   /* 2) Make it in accessible to mouse and keyboard */
-  pointer-events: none;
+  /* pointer-events: none; */
   /* Hide it from screen readers */
-  visibility: hidden;
+  /* visibility: hidden; */
   
 
 }
@@ -192,7 +192,7 @@ transform: translateX(100%);
   .hero-img{
     width: 80%;
   }
-
+.logos img{height: 2.2rem;}
 .diets{
   grid-column: 1/-1;
   justify-self: center;
@@ -203,6 +203,10 @@ transform: translateX(100%);
 .pricing-plan{
   width:100%;
   padding:3.2rem 0rem;
+}
+.pricing-plan--complete::after{
+    top: 4%;
+    right: -22%;
 }
 .footer{
   padding-bottom: 4.8rem;
@@ -224,7 +228,72 @@ transform: translateX(100%);
 
 }
 
+/******************************************************/
+/*BELOW 560px Phones */
+/******************************************************/
+@media(max-width:35em){
 
+  .grid{
+    row-gap: 4.8rem ;
+  }
+  .grid--2-cols ,
+  .grid--3-cols ,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem ;
+  }
+
+
+.section-hero{
+  padding: 2.4rem 0 6.4rem 0;
+}
+.hero{
+  padding:0 2.4rem;
+
+}
+.heading-featured-in {
+  font-size: 1rem;}
+.logos img{
+  height: 1.2rem;
+}
+.step-img-box:nth-child(2){
+grid-row: 1;
+}
+.step-img-box:nth-child(6){
+  grid-row: 5;
+}
+.step-img-box{
+  transform: translateY(2.4rem);
+}
+.testimonials{
+  grid-template-columns: 1fr;
+}
+.gallery{
+  grid-template-columns: repeat(4,1fr);
+  gap: 1.2rem;
+}
+
+.pricing-plan--complete::after{
+  top: 6%;
+  right: -11%;
+}
+.cta{
+  grid-template-columns: 1fr;
+  
+}
+.cta-textbox{
+  padding:3.2rem;
+}
+.cta-imgbox{
+  height: 32rem;
+  grid-row: 1;
+}
+}
 
 
 

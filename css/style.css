@@ -76,18 +76,18 @@ it increases specificity */
 }
 .icon-mobile-nav[name="menu-outline"]{
   /* to put menu on close */
-transform: translateX(110%);
+/* transform: translateX(110%); */
  
 
 }
 .icon-mobile-nav[name="close-outline"]{
-  /* display: none; */
+  display: none;
   /* 1) Hide it Visually */
-  opacity: 0;
+  /* opacity: 0;
   /* 2) Make it in accessible to mouse and keyboard */
-  pointer-events: none;
-  /* Hide it from screen readers */
-  visibility: hidden;
+  /* pointer-events: none; */
+  /* Hide it from screen readers 
+  visibility: hidden; */
 }
 
 
