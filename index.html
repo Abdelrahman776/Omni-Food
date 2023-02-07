@@ -15,8 +15,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/queries.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="header">
+  <body >
+    <header class="header ">
       <a href="#">
 
         <img class="logo" src="img/omnifood-logo.png" alt="omnifood-logo" />
@@ -50,7 +50,7 @@
             <a href="#cta" class="btn btn-full margin-right-sm"
               >Start Eating well
             </a>
-            <a href="#" class="btn btn-outline">Learn more &darr;</a>
+            <a href="#howitworks" class="btn btn-outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="customer-photo" />
@@ -158,9 +158,9 @@
           </div>
         </div>
       </section>
-      <section class="section-meals"id="meals">
+      <section class="section-meals">
         <div class="container center-text">
-          <span class="subheading">Meals</span>
+          <span class="subheading" id="meals">Meals</span>
           <h2 class="heading-secondry">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
@@ -284,7 +284,7 @@
           <h2 class="heading-secondry">Once you try it, you can't go back</h2>
           <div class="testimonials">
             <figure class="testimonial">
-              <img class="testimonial-img" src="img/customers/dave.jpg" />
+              <img  alt="customer-photo" class="testimonial-img" src="img/customers/dave.jpg" />
               <blockquote class="testimonial-text">
                 Inexpensive, healthy and great-tasting meals, without even
                 having to order manually! It feels truly magical.
@@ -292,7 +292,7 @@
               <p class="testimonial-name">&mdash; Dave Bryson</p>
             </figure>
             <figure class="testimonial">
-              <img class="testimonial-img" src="img/customers/young.jpg" />
+              <img alt="customer-photo" class="testimonial-img" src="img/customers/young.jpg" />
               <blockquote class="testimonial-text">
                 The AI algorithm is crazy good, it chooses the right meals for
                 me every time. It's amazing not to worry about food anymore!
@@ -300,7 +300,7 @@
               <p class="testimonial-name">&mdash; Ben Hadley</p>
             </figure>
             <figure class="testimonial">
-              <img class="testimonial-img" src="img/customers/steve.jpg" />
+              <img alt="customer-photo" class="testimonial-img" src="img/customers/steve.jpg" />
               <blockquote class="testimonial-text">
                 Omnifood is a life saver! I just started a company, so there's
                 no time for cooking. I couldn't live without my daily meals now!
@@ -308,7 +308,7 @@
               <p class="testimonial-name">&mdash; Steve Miller</p>
             </figure>
             <figure class="testimonial">
-              <img class="testimonial-img" src="img/customers/AdamMike.jpg" />
+              <img alt="customer-photo" class="testimonial-img" src="img/customers/AdamMike.jpg" />
               <blockquote class="testimonial-text">
                 I got Omnifood for the whole family, and it frees up so much
                 time! Plus, everything is organic and vegan and without plastic.
@@ -393,9 +393,9 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing" id="pricing">
+      <section class="section-pricing" >
         <div class="container">
-          <span class="subheading">Pricing</span>
+          <span id="pricing"class="subheading">Pricing</span>
           <h2 class="heading-secondry">
             Eating well without breaking the bank
           </h2>
@@ -426,7 +426,7 @@
               </li>
             </ul>
             <div class="btn-signup">
-              <a href="#" class="btn btn-full">Start Eating well </a>
+              <a href="#cta" class="btn btn-full">Start Eating well </a>
             </div>
           </div>
           <div class="pricing-plan pricing-plan--complete">
@@ -454,7 +454,7 @@
               </li>
             </ul>
             <div class="btn-signup">
-              <a href="#" class="btn btn-full">Start Eating well </a>
+              <a href="#cta" class="btn btn-full">Start Eating well </a>
             </div>
           </div>
         </div>
@@ -624,6 +624,7 @@
   </nav>
 </div>
     </footer>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="JS/script.js"></script>
     <script
       type="module"

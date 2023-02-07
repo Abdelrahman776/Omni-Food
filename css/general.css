@@ -60,7 +60,8 @@ Default: 9px
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-
+  /* does not work on all browsers */
+scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
