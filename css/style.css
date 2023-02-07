@@ -74,12 +74,12 @@ it increases specificity */
   height: 4.8rem;
   transition: all .4s;/*for trasition between menu and close*/
 }
-.icon-mobile-nav[name="menu-outline"]{
+/* .icon-mobile-nav[name="menu-outline"]{ */
   /* to put menu on close */
 /* transform: translateX(110%); */
  
-
-}
+/* 
+} */
 .icon-mobile-nav[name="close-outline"]{
   display: none;
   /* 1) Hide it Visually */
